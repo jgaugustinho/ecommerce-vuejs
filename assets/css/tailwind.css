@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+	margin-top: 25px;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+h1 {
+	color: #555;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+main p {
+	color: #555;
+	font-size: 1.2em;
+}
