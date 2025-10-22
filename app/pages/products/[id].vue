@@ -54,4 +54,9 @@
 	const { id } = useRoute().params;
 	const uri = 'https://fakestoreapi.com/products/' + id;
 	const { data: product } = await useFetch( uri, { key: id } );
+
+	if( !product.value ) {
+		//Fatal: true forces the application to display the error page, even if a non existing product is requested by an internal link
+		throw createError( { statusCode: 404, message: 'Product not found', fatal: true } ); 
+	}
 </script>
