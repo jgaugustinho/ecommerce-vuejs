@@ -19,6 +19,11 @@
 </template>
 
 <script setup>
+	useHead( {
+		title: 'My Store - Products',
+		meta: [ { name: 'description', content: 'Browse our collection of amazing products.' } ]
+	} );
+
 	definePageMeta( {
 		layout: 'products'
 	} );
